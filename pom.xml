@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.rookandpawn</groupId>
+    <artifactId>white-noise</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>White Noise Parent</name>
+
+    <packaging>pom</packaging>
+
+    <properties>
+        <j2objc>/Users/kguthrie/Applications/j2objc-1.2/j2objc</j2objc>
+        <j2objcc>/Users/kguthrie/Applications/j2objc-1.2/j2objcc</j2objcc>
+
+        <!--
+            Some default project options.  This takes some boiler plate away
+            from each sub project
+        -->
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+        <!-- prevent javadoc errors from failing the build :( -->
+        <additionalparam>-Xdoclint:none</additionalparam>
+    </properties>
+
+    <scm>
+        <connection>scm:git:git@gitlab.glam.colo:johnhurt/white-noise.git</connection>
+        <url>https://github.com/johnhurt/kollapse</url>
+        <developerConnection>scm:git:git@gitlab.glam.colo:johnhurt/white-noise.git</developerConnection>
+    </scm>
+
+    <modules>
+        <module>white-noise-core</module>
+    </modules>
+
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>com.smoope.utils</groupId>
+                    <artifactId>j2objc-maven-plugin</artifactId>
+                    <version>1.1.2</version>
+                    <configuration>
+                        <j2objcPath>${j2objc}</j2objcPath>
+                        <useArc>true</useArc>
+                        <noPackageDirectories>true</noPackageDirectories>
+                        <!-- default value -->
+                        <sourcePath>${project.basedir}/src/main/java</sourcePath>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
+</project>

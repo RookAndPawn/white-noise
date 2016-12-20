@@ -23,7 +23,6 @@
 		63E0D9941DFF0AA900C3F650 /* JRE.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63E0D9931DFF0AA900C3F650 /* JRE.framework */; };
 		63E0D9961DFF0AC900C3F650 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63E0D9951DFF0AC900C3F650 /* UIKit.framework */; };
 		63E0D9981DFF0B2500C3F650 /* AudioSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E0D9971DFF0B2500C3F650 /* AudioSource.swift */; };
-		63E0D9A11DFF16F800C3F650 /* CoreSettings.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 63E0D9A01DFF16F800C3F650 /* CoreSettings.xcconfig */; };
 		63FA54561DFF22DC00E487A8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FA54551DFF22DC00E487A8 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +37,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		63D6E13F1E06E7F5008F2923 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		63E0D98B1DFF092600C3F650 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -70,7 +79,6 @@
 		63E0D9931DFF0AA900C3F650 /* JRE.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JRE.framework; path = "../../../../Applications/j2objc-1.2/frameworks/JRE.framework"; sourceTree = "<group>"; };
 		63E0D9951DFF0AC900C3F650 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		63E0D9971DFF0B2500C3F650 /* AudioSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioSource.swift; sourceTree = "<group>"; };
-		63E0D9A01DFF16F800C3F650 /* CoreSettings.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = CoreSettings.xcconfig; sourceTree = "<group>"; };
 		63FA54551DFF22DC00E487A8 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -139,7 +147,6 @@
 				638733911DFF25B200947FD8 /* WhiteNoise.swift */,
 				63E0D9811DFF092600C3F650 /* WhiteNoiseCore.h */,
 				63E0D9821DFF092600C3F650 /* Info.plist */,
-				63E0D9A01DFF16F800C3F650 /* CoreSettings.xcconfig */,
 			);
 			path = WhiteNoiseCore;
 			sourceTree = "<group>";
@@ -177,6 +184,7 @@
 				63E0D9621DFF089200C3F650 /* Frameworks */,
 				63E0D9631DFF089200C3F650 /* Resources */,
 				63E0D98B1DFF092600C3F650 /* Embed Frameworks */,
+				63D6E13F1E06E7F5008F2923 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
@@ -218,7 +226,7 @@
 				TargetAttributes = {
 					63E0D9641DFF089200C3F650 = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = 8MMZG47RG3;
+						DevelopmentTeam = N8F6RS8578;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
@@ -267,7 +275,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63E0D9A11DFF16F800C3F650 /* CoreSettings.xcconfig in Resources */,
 				63E0D9911DFF0A5D00C3F650 /* Settings.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -425,10 +432,11 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 8MMZG47RG3;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = N8F6RS8578;
 				INFOPLIST_FILE = "White Noise IOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.rookandpawn.White-Noise-IOS";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rookandpawn.WhiteNoise;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -439,10 +447,11 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 8MMZG47RG3;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = N8F6RS8578;
 				INFOPLIST_FILE = "White Noise IOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.rookandpawn.White-Noise-IOS";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rookandpawn.WhiteNoise;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -450,7 +459,6 @@
 		};
 		63E0D9891DFF092600C3F650 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 63E0D9A01DFF16F800C3F650 /* CoreSettings.xcconfig */;
 			buildSettings = {
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
 				CLANG_ENABLE_MODULES = YES;
@@ -477,7 +485,6 @@
 		};
 		63E0D98A1DFF092600C3F650 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 63E0D9A01DFF16F800C3F650 /* CoreSettings.xcconfig */;
 			buildSettings = {
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
 				CLANG_ENABLE_MODULES = YES;

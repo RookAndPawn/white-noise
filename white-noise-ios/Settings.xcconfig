@@ -1,0 +1,5 @@
+
+J2OBJC_HOME = /Users/kguthrie/Applications/j2objc-1.2;
+
+HEADER_SEARCH_PATHS = "${J2OBJC_HOME}/frameworks/JRE.framework/Headers";
+FRAMEWORK_SEARCH_PATHS = "${J2OBJC_HOME}/frameworks";

@@ -57,7 +57,6 @@
 		63E0D9701DFF089200C3F650 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63E0D96F1DFF089200C3F650 /* Assets.xcassets */; };
 		63E0D9731DFF089200C3F650 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63E0D9711DFF089200C3F650 /* LaunchScreen.storyboard */; };
 		63E0D9831DFF092600C3F650 /* WhiteNoiseCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 63E0D9811DFF092600C3F650 /* WhiteNoiseCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		63E0D9911DFF0A5D00C3F650 /* Settings.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 63E0D9901DFF0A5D00C3F650 /* Settings.xcconfig */; };
 		63E0D9961DFF0AC900C3F650 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63E0D9951DFF0AC900C3F650 /* UIKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -360,7 +359,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0810;
-				LastUpgradeCheck = 0810;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = RookAndPawn;
 				TargetAttributes = {
 					63E0D9641DFF089200C3F650 = {
@@ -415,7 +414,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63E0D9911DFF0A5D00C3F650 /* Settings.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -506,6 +504,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -557,6 +556,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;

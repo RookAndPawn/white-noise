@@ -18,3 +18,13 @@ FOUNDATION_EXPORT const unsigned char WhiteNoiseCoreVersionString[];
 
 #import <WhiteNoiseCore/AudioGenerator.h>
 #import <WhiteNoiseCore/WhiteNoiseGenerator.h>
+#import <WhiteNoiseCore/J2ObjcPcmBuffer.h>
+#import <WhiteNoiseCore/AudioView.h>
+#import <WhiteNoiseCore/HasFloat.h>
+#import <WhiteNoiseCore/HasInterruptHandlers.h>
+#import <WhiteNoiseCore/AudioPresenter.h>
+#import <WhiteNoiseCore/Presenter.h>
+#import <WhiteNoiseCore/View.h>
+#import <WhiteNoiseCore/HasClickHandlers.h>
+#import <WhiteNoiseCore/ClickHandler.h>
+#import <WhiteNoiseCore/HasText.h>

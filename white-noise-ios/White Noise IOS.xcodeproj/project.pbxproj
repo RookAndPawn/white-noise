@@ -7,27 +7,62 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		638733921DFF25B200947FD8 /* WhiteNoise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638733911DFF25B200947FD8 /* WhiteNoise.swift */; };
+		633136601E22A11300CE9BEC /* JRE.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63E0D9931DFF0AA900C3F650 /* JRE.framework */; };
+		633136631E22A39600CE9BEC /* Guava.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 633136621E22A39600CE9BEC /* Guava.framework */; };
+		635992991E17FAD20043A599 /* J2ObjcPcmBuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 635992971E17FAD20043A599 /* J2ObjcPcmBuffer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6359929A1E17FAD20043A599 /* J2ObjcPcmBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = 635992981E17FAD20043A599 /* J2ObjcPcmBuffer.m */; };
+		6359929C1E17FD060043A599 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6359929B1E17FD060043A599 /* AVFoundation.framework */; };
+		637B03791E2D6DC200928616 /* JSR305.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 633136641E22A4C600CE9BEC /* JSR305.framework */; };
+		637B03811E2D736000928616 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FA54551DFF22DC00E487A8 /* ViewController.swift */; };
+		637B03821E2D73A000928616 /* Guava.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 633136621E22A39600CE9BEC /* Guava.framework */; };
+		637B03831E2D73AD00928616 /* JRE.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63E0D9931DFF0AA900C3F650 /* JRE.framework */; };
+		6386451A1E2D584800DD310F /* PlayPauseEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 638645181E2D584800DD310F /* PlayPauseEvent.h */; };
+		6386451B1E2D584800DD310F /* PlayPauseEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 638645191E2D584800DD310F /* PlayPauseEvent.m */; };
 		638733B41E00E56D00947FD8 /* AudioGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = 638733B21E00E56D00947FD8 /* AudioGenerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		638733B51E00E56D00947FD8 /* AudioGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 638733B31E00E56D00947FD8 /* AudioGenerator.m */; };
+		63942BD91E286AC4000E7649 /* HasBuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 63942BD71E286AC4000E7649 /* HasBuffer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63942BDA1E286AC4000E7649 /* HasBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = 63942BD81E286AC4000E7649 /* HasBuffer.m */; };
+		63942BDF1E286E17000E7649 /* InterruptionEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 63942BDB1E286E17000E7649 /* InterruptionEvent.h */; };
+		63942BE01E286E17000E7649 /* InterruptionEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 63942BDC1E286E17000E7649 /* InterruptionEvent.m */; };
+		63942BE71E28734D000E7649 /* HasInterruptHandlers.h in Headers */ = {isa = PBXBuildFile; fileRef = 63942BE31E28734D000E7649 /* HasInterruptHandlers.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63942BE81E28734D000E7649 /* HasInterruptHandlers.m in Sources */ = {isa = PBXBuildFile; fileRef = 63942BE41E28734D000E7649 /* HasInterruptHandlers.m */; };
+		63942BE91E28734D000E7649 /* InterruptHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 63942BE51E28734D000E7649 /* InterruptHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63942BEA1E28734D000E7649 /* InterruptHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 63942BE61E28734D000E7649 /* InterruptHandler.m */; };
+		63942BF11E29B7D4000E7649 /* ClickHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 63942BED1E29B7D4000E7649 /* ClickHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63942BF21E29B7D4000E7649 /* ClickHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 63942BEE1E29B7D4000E7649 /* ClickHandler.m */; };
+		63942BF31E29B7D4000E7649 /* HasClickHandlers.h in Headers */ = {isa = PBXBuildFile; fileRef = 63942BEF1E29B7D4000E7649 /* HasClickHandlers.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63942BF41E29B7D4000E7649 /* HasClickHandlers.m in Sources */ = {isa = PBXBuildFile; fileRef = 63942BF01E29B7D4000E7649 /* HasClickHandlers.m */; };
+		639FF7321E2D5D6D005EDACF /* WhiteNoiseCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63E0D97F1DFF092600C3F650 /* WhiteNoiseCore.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		639FF7331E2D5D6D005EDACF /* WhiteNoiseCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 63E0D97F1DFF092600C3F650 /* WhiteNoiseCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		63AA94D91E03384C00884CB3 /* WhiteNoiseGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = 63AA94D71E03384C00884CB3 /* WhiteNoiseGenerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		63AA94DA1E03384C00884CB3 /* WhiteNoiseGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 63AA94D81E03384C00884CB3 /* WhiteNoiseGenerator.m */; };
+		63AF13C41E21D0320001E3AF /* AudioPresenter.h in Headers */ = {isa = PBXBuildFile; fileRef = 63AF13AE1E21D0320001E3AF /* AudioPresenter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63AF13C51E21D0320001E3AF /* AudioPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 63AF13AF1E21D0320001E3AF /* AudioPresenter.m */; };
+		63AF13C61E21D0320001E3AF /* AudioView.h in Headers */ = {isa = PBXBuildFile; fileRef = 63AF13B01E21D0320001E3AF /* AudioView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63AF13C71E21D0320001E3AF /* AudioView.m in Sources */ = {isa = PBXBuildFile; fileRef = 63AF13B11E21D0320001E3AF /* AudioView.m */; };
+		63AF13C81E21D0320001E3AF /* HandlerRegistration.h in Headers */ = {isa = PBXBuildFile; fileRef = 63AF13B21E21D0320001E3AF /* HandlerRegistration.h */; };
+		63AF13C91E21D0320001E3AF /* HandlerRegistration.m in Sources */ = {isa = PBXBuildFile; fileRef = 63AF13B31E21D0320001E3AF /* HandlerRegistration.m */; };
+		63AF13CE1E21D0320001E3AF /* HasText.h in Headers */ = {isa = PBXBuildFile; fileRef = 63AF13B81E21D0320001E3AF /* HasText.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63AF13CF1E21D0320001E3AF /* HasText.m in Sources */ = {isa = PBXBuildFile; fileRef = 63AF13B91E21D0320001E3AF /* HasText.m */; };
+		63AF13D41E21D0320001E3AF /* Presenter.h in Headers */ = {isa = PBXBuildFile; fileRef = 63AF13BE1E21D0320001E3AF /* Presenter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63AF13D51E21D0320001E3AF /* Presenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 63AF13BF1E21D0320001E3AF /* Presenter.m */; };
+		63AF13D81E21D0320001E3AF /* View.h in Headers */ = {isa = PBXBuildFile; fileRef = 63AF13C21E21D0320001E3AF /* View.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63AF13D91E21D0320001E3AF /* View.m in Sources */ = {isa = PBXBuildFile; fileRef = 63AF13C31E21D0320001E3AF /* View.m */; };
+		63AF13DB1E21D15B0001E3AF /* IosAudioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63AF13DA1E21D15B0001E3AF /* IosAudioView.swift */; };
+		63AF13DD1E21D7410001E3AF /* VolumeControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63AF13DC1E21D7410001E3AF /* VolumeControl.swift */; };
+		63AF13E01E21D8310001E3AF /* HasFloat.h in Headers */ = {isa = PBXBuildFile; fileRef = 63AF13DE1E21D8310001E3AF /* HasFloat.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63AF13E11E21D8310001E3AF /* HasFloat.m in Sources */ = {isa = PBXBuildFile; fileRef = 63AF13DF1E21D8310001E3AF /* HasFloat.m */; };
 		63E0D9691DFF089200C3F650 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E0D9681DFF089200C3F650 /* AppDelegate.swift */; };
 		63E0D96E1DFF089200C3F650 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63E0D96C1DFF089200C3F650 /* Main.storyboard */; };
 		63E0D9701DFF089200C3F650 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63E0D96F1DFF089200C3F650 /* Assets.xcassets */; };
 		63E0D9731DFF089200C3F650 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63E0D9711DFF089200C3F650 /* LaunchScreen.storyboard */; };
 		63E0D9831DFF092600C3F650 /* WhiteNoiseCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 63E0D9811DFF092600C3F650 /* WhiteNoiseCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		63E0D9861DFF092600C3F650 /* WhiteNoiseCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63E0D97F1DFF092600C3F650 /* WhiteNoiseCore.framework */; };
-		63E0D9871DFF092600C3F650 /* WhiteNoiseCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 63E0D97F1DFF092600C3F650 /* WhiteNoiseCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		63E0D9911DFF0A5D00C3F650 /* Settings.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 63E0D9901DFF0A5D00C3F650 /* Settings.xcconfig */; };
-		63E0D9941DFF0AA900C3F650 /* JRE.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63E0D9931DFF0AA900C3F650 /* JRE.framework */; };
 		63E0D9961DFF0AC900C3F650 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63E0D9951DFF0AC900C3F650 /* UIKit.framework */; };
-		63E0D9981DFF0B2500C3F650 /* AudioSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E0D9971DFF0B2500C3F650 /* AudioSource.swift */; };
-		63FA54561DFF22DC00E487A8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FA54551DFF22DC00E487A8 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		63E0D9841DFF092600C3F650 /* PBXContainerItemProxy */ = {
+		639FF7341E2D5D6D005EDACF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 63E0D95D1DFF089200C3F650 /* Project object */;
 			proxyType = 1;
@@ -37,6 +72,26 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		638645121E2A9C0800DD310F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		639FF72B1E2D5D40005EDACF /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				639FF7331E2D5D6D005EDACF /* WhiteNoiseCore.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		63D6E13F1E06E7F5008F2923 /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -47,25 +102,48 @@
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		63E0D98B1DFF092600C3F650 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				63E0D9871DFF092600C3F650 /* WhiteNoiseCore.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		638733911DFF25B200947FD8 /* WhiteNoise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhiteNoise.swift; sourceTree = "<group>"; };
+		633136621E22A39600CE9BEC /* Guava.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Guava.framework; path = "../../../../Applications/j2objc-1.2/frameworks/Guava.framework"; sourceTree = "<group>"; };
+		633136641E22A4C600CE9BEC /* JSR305.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JSR305.framework; path = "../../../../Applications/j2objc-1.2/frameworks/JSR305.framework"; sourceTree = "<group>"; };
+		635992971E17FAD20043A599 /* J2ObjcPcmBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = J2ObjcPcmBuffer.h; sourceTree = "<group>"; };
+		635992981E17FAD20043A599 /* J2ObjcPcmBuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = J2ObjcPcmBuffer.m; sourceTree = "<group>"; };
+		6359929B1E17FD060043A599 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		638645181E2D584800DD310F /* PlayPauseEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayPauseEvent.h; sourceTree = "<group>"; };
+		638645191E2D584800DD310F /* PlayPauseEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayPauseEvent.m; sourceTree = "<group>"; };
 		638733B21E00E56D00947FD8 /* AudioGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioGenerator.h; sourceTree = "<group>"; };
 		638733B31E00E56D00947FD8 /* AudioGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioGenerator.m; sourceTree = "<group>"; };
+		63942BD71E286AC4000E7649 /* HasBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HasBuffer.h; sourceTree = "<group>"; };
+		63942BD81E286AC4000E7649 /* HasBuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HasBuffer.m; sourceTree = "<group>"; };
+		63942BDB1E286E17000E7649 /* InterruptionEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InterruptionEvent.h; sourceTree = "<group>"; };
+		63942BDC1E286E17000E7649 /* InterruptionEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InterruptionEvent.m; sourceTree = "<group>"; };
+		63942BE31E28734D000E7649 /* HasInterruptHandlers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HasInterruptHandlers.h; sourceTree = "<group>"; };
+		63942BE41E28734D000E7649 /* HasInterruptHandlers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HasInterruptHandlers.m; sourceTree = "<group>"; };
+		63942BE51E28734D000E7649 /* InterruptHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InterruptHandler.h; sourceTree = "<group>"; };
+		63942BE61E28734D000E7649 /* InterruptHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InterruptHandler.m; sourceTree = "<group>"; };
+		63942BED1E29B7D4000E7649 /* ClickHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClickHandler.h; sourceTree = "<group>"; };
+		63942BEE1E29B7D4000E7649 /* ClickHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClickHandler.m; sourceTree = "<group>"; };
+		63942BEF1E29B7D4000E7649 /* HasClickHandlers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HasClickHandlers.h; sourceTree = "<group>"; };
+		63942BF01E29B7D4000E7649 /* HasClickHandlers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HasClickHandlers.m; sourceTree = "<group>"; };
 		63AA94D71E03384C00884CB3 /* WhiteNoiseGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhiteNoiseGenerator.h; sourceTree = "<group>"; };
 		63AA94D81E03384C00884CB3 /* WhiteNoiseGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WhiteNoiseGenerator.m; sourceTree = "<group>"; };
+		63AF13AE1E21D0320001E3AF /* AudioPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioPresenter.h; sourceTree = "<group>"; };
+		63AF13AF1E21D0320001E3AF /* AudioPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioPresenter.m; sourceTree = "<group>"; };
+		63AF13B01E21D0320001E3AF /* AudioView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioView.h; sourceTree = "<group>"; };
+		63AF13B11E21D0320001E3AF /* AudioView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioView.m; sourceTree = "<group>"; };
+		63AF13B21E21D0320001E3AF /* HandlerRegistration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HandlerRegistration.h; sourceTree = "<group>"; };
+		63AF13B31E21D0320001E3AF /* HandlerRegistration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HandlerRegistration.m; sourceTree = "<group>"; };
+		63AF13B81E21D0320001E3AF /* HasText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HasText.h; sourceTree = "<group>"; };
+		63AF13B91E21D0320001E3AF /* HasText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HasText.m; sourceTree = "<group>"; };
+		63AF13BE1E21D0320001E3AF /* Presenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Presenter.h; sourceTree = "<group>"; };
+		63AF13BF1E21D0320001E3AF /* Presenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Presenter.m; sourceTree = "<group>"; };
+		63AF13C21E21D0320001E3AF /* View.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = View.h; sourceTree = "<group>"; };
+		63AF13C31E21D0320001E3AF /* View.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = View.m; sourceTree = "<group>"; };
+		63AF13DA1E21D15B0001E3AF /* IosAudioView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IosAudioView.swift; sourceTree = "<group>"; };
+		63AF13DC1E21D7410001E3AF /* VolumeControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VolumeControl.swift; sourceTree = "<group>"; };
+		63AF13DE1E21D8310001E3AF /* HasFloat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HasFloat.h; sourceTree = "<group>"; };
+		63AF13DF1E21D8310001E3AF /* HasFloat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HasFloat.m; sourceTree = "<group>"; };
 		63E0D9651DFF089200C3F650 /* White Noise IOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "White Noise IOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		63E0D9681DFF089200C3F650 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63E0D96D1DFF089200C3F650 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -78,7 +156,6 @@
 		63E0D9901DFF0A5D00C3F650 /* Settings.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Settings.xcconfig; sourceTree = "<group>"; };
 		63E0D9931DFF0AA900C3F650 /* JRE.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JRE.framework; path = "../../../../Applications/j2objc-1.2/frameworks/JRE.framework"; sourceTree = "<group>"; };
 		63E0D9951DFF0AC900C3F650 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		63E0D9971DFF0B2500C3F650 /* AudioSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioSource.swift; sourceTree = "<group>"; };
 		63FA54551DFF22DC00E487A8 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -87,7 +164,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63E0D9861DFF092600C3F650 /* WhiteNoiseCore.framework in Frameworks */,
+				639FF7321E2D5D6D005EDACF /* WhiteNoiseCore.framework in Frameworks */,
+				637B03831E2D73AD00928616 /* JRE.framework in Frameworks */,
+				637B03821E2D73A000928616 /* Guava.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,14 +174,56 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				637B03791E2D6DC200928616 /* JSR305.framework in Frameworks */,
+				633136631E22A39600CE9BEC /* Guava.framework in Frameworks */,
+				6359929C1E17FD060043A599 /* AVFoundation.framework in Frameworks */,
 				63E0D9961DFF0AC900C3F650 /* UIKit.framework in Frameworks */,
-				63E0D9941DFF0AA900C3F650 /* JRE.framework in Frameworks */,
+				633136601E22A11300CE9BEC /* JRE.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		633136661E22A5DD00CE9BEC /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				638645181E2D584800DD310F /* PlayPauseEvent.h */,
+				638645191E2D584800DD310F /* PlayPauseEvent.m */,
+				63942BED1E29B7D4000E7649 /* ClickHandler.h */,
+				63942BEE1E29B7D4000E7649 /* ClickHandler.m */,
+				63942BEF1E29B7D4000E7649 /* HasClickHandlers.h */,
+				63942BF01E29B7D4000E7649 /* HasClickHandlers.m */,
+				63942BE31E28734D000E7649 /* HasInterruptHandlers.h */,
+				63942BE41E28734D000E7649 /* HasInterruptHandlers.m */,
+				63942BE51E28734D000E7649 /* InterruptHandler.h */,
+				63942BE61E28734D000E7649 /* InterruptHandler.m */,
+				63942BDB1E286E17000E7649 /* InterruptionEvent.h */,
+				63942BDC1E286E17000E7649 /* InterruptionEvent.m */,
+				63942BD71E286AC4000E7649 /* HasBuffer.h */,
+				63942BD81E286AC4000E7649 /* HasBuffer.m */,
+				63AF13DE1E21D8310001E3AF /* HasFloat.h */,
+				63AF13DF1E21D8310001E3AF /* HasFloat.m */,
+				63AF13AE1E21D0320001E3AF /* AudioPresenter.h */,
+				63AF13AF1E21D0320001E3AF /* AudioPresenter.m */,
+				63AF13B01E21D0320001E3AF /* AudioView.h */,
+				63AF13B11E21D0320001E3AF /* AudioView.m */,
+				63AF13B21E21D0320001E3AF /* HandlerRegistration.h */,
+				63AF13B31E21D0320001E3AF /* HandlerRegistration.m */,
+				63AF13B81E21D0320001E3AF /* HasText.h */,
+				63AF13B91E21D0320001E3AF /* HasText.m */,
+				63AF13BE1E21D0320001E3AF /* Presenter.h */,
+				63AF13BF1E21D0320001E3AF /* Presenter.m */,
+				63AF13C21E21D0320001E3AF /* View.h */,
+				63AF13C31E21D0320001E3AF /* View.m */,
+				638733B21E00E56D00947FD8 /* AudioGenerator.h */,
+				638733B31E00E56D00947FD8 /* AudioGenerator.m */,
+				63AA94D71E03384C00884CB3 /* WhiteNoiseGenerator.h */,
+				63AA94D81E03384C00884CB3 /* WhiteNoiseGenerator.m */,
+			);
+			name = Generated;
+			sourceTree = "<group>";
+		};
 		63E0D95C1DFF089200C3F650 = {
 			isa = PBXGroup;
 			children = (
@@ -139,13 +260,12 @@
 		63E0D9801DFF092600C3F650 /* WhiteNoiseCore */ = {
 			isa = PBXGroup;
 			children = (
-				63AA94D71E03384C00884CB3 /* WhiteNoiseGenerator.h */,
-				63AA94D81E03384C00884CB3 /* WhiteNoiseGenerator.m */,
-				638733B21E00E56D00947FD8 /* AudioGenerator.h */,
-				638733B31E00E56D00947FD8 /* AudioGenerator.m */,
-				63E0D9971DFF0B2500C3F650 /* AudioSource.swift */,
-				638733911DFF25B200947FD8 /* WhiteNoise.swift */,
+				633136661E22A5DD00CE9BEC /* Generated */,
 				63E0D9811DFF092600C3F650 /* WhiteNoiseCore.h */,
+				635992971E17FAD20043A599 /* J2ObjcPcmBuffer.h */,
+				635992981E17FAD20043A599 /* J2ObjcPcmBuffer.m */,
+				63AF13DA1E21D15B0001E3AF /* IosAudioView.swift */,
+				63AF13DC1E21D7410001E3AF /* VolumeControl.swift */,
 				63E0D9821DFF092600C3F650 /* Info.plist */,
 			);
 			path = WhiteNoiseCore;
@@ -154,6 +274,9 @@
 		63E0D9921DFF0AA800C3F650 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				633136641E22A4C600CE9BEC /* JSR305.framework */,
+				633136621E22A39600CE9BEC /* Guava.framework */,
+				6359929B1E17FD060043A599 /* AVFoundation.framework */,
 				63E0D9951DFF0AC900C3F650 /* UIKit.framework */,
 				63E0D9931DFF0AA900C3F650 /* JRE.framework */,
 			);
@@ -167,9 +290,24 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63AF13D41E21D0320001E3AF /* Presenter.h in Headers */,
+				6386451A1E2D584800DD310F /* PlayPauseEvent.h in Headers */,
+				63AF13C61E21D0320001E3AF /* AudioView.h in Headers */,
+				63AF13C41E21D0320001E3AF /* AudioPresenter.h in Headers */,
+				63942BDF1E286E17000E7649 /* InterruptionEvent.h in Headers */,
+				63942BF11E29B7D4000E7649 /* ClickHandler.h in Headers */,
 				63E0D9831DFF092600C3F650 /* WhiteNoiseCore.h in Headers */,
+				63AF13E01E21D8310001E3AF /* HasFloat.h in Headers */,
+				63942BD91E286AC4000E7649 /* HasBuffer.h in Headers */,
 				638733B41E00E56D00947FD8 /* AudioGenerator.h in Headers */,
+				63AF13C81E21D0320001E3AF /* HandlerRegistration.h in Headers */,
+				63942BE71E28734D000E7649 /* HasInterruptHandlers.h in Headers */,
+				63AF13D81E21D0320001E3AF /* View.h in Headers */,
 				63AA94D91E03384C00884CB3 /* WhiteNoiseGenerator.h in Headers */,
+				63942BF31E29B7D4000E7649 /* HasClickHandlers.h in Headers */,
+				63942BE91E28734D000E7649 /* InterruptHandler.h in Headers */,
+				63AF13CE1E21D0320001E3AF /* HasText.h in Headers */,
+				635992991E17FAD20043A599 /* J2ObjcPcmBuffer.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -183,13 +321,14 @@
 				63E0D9611DFF089200C3F650 /* Sources */,
 				63E0D9621DFF089200C3F650 /* Frameworks */,
 				63E0D9631DFF089200C3F650 /* Resources */,
-				63E0D98B1DFF092600C3F650 /* Embed Frameworks */,
 				63D6E13F1E06E7F5008F2923 /* Embed App Extensions */,
+				638645121E2A9C0800DD310F /* CopyFiles */,
+				639FF72B1E2D5D40005EDACF /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				63E0D9851DFF092600C3F650 /* PBXTargetDependency */,
+				639FF7351E2D5D6D005EDACF /* PBXTargetDependency */,
 			);
 			name = "White Noise IOS";
 			productName = "White Noise IOS";
@@ -236,6 +375,7 @@
 					};
 					63E0D97E1DFF092600C3F650 = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = N8F6RS8578;
 						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
@@ -286,7 +426,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63FA54561DFF22DC00E487A8 /* ViewController.swift in Sources */,
+				637B03811E2D736000928616 /* ViewController.swift in Sources */,
 				63E0D9691DFF089200C3F650 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -295,20 +435,35 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				638733921DFF25B200947FD8 /* WhiteNoise.swift in Sources */,
+				63942BEA1E28734D000E7649 /* InterruptHandler.m in Sources */,
+				63942BF21E29B7D4000E7649 /* ClickHandler.m in Sources */,
+				63AF13DB1E21D15B0001E3AF /* IosAudioView.swift in Sources */,
+				63AF13C91E21D0320001E3AF /* HandlerRegistration.m in Sources */,
+				63942BE01E286E17000E7649 /* InterruptionEvent.m in Sources */,
+				63942BE81E28734D000E7649 /* HasInterruptHandlers.m in Sources */,
+				63AF13C71E21D0320001E3AF /* AudioView.m in Sources */,
+				63AF13DD1E21D7410001E3AF /* VolumeControl.swift in Sources */,
+				6359929A1E17FAD20043A599 /* J2ObjcPcmBuffer.m in Sources */,
+				6386451B1E2D584800DD310F /* PlayPauseEvent.m in Sources */,
 				638733B51E00E56D00947FD8 /* AudioGenerator.m in Sources */,
+				63AF13CF1E21D0320001E3AF /* HasText.m in Sources */,
+				63AF13C51E21D0320001E3AF /* AudioPresenter.m in Sources */,
+				63AF13D51E21D0320001E3AF /* Presenter.m in Sources */,
+				63AF13D91E21D0320001E3AF /* View.m in Sources */,
 				63AA94DA1E03384C00884CB3 /* WhiteNoiseGenerator.m in Sources */,
-				63E0D9981DFF0B2500C3F650 /* AudioSource.swift in Sources */,
+				63AF13E11E21D8310001E3AF /* HasFloat.m in Sources */,
+				63942BF41E29B7D4000E7649 /* HasClickHandlers.m in Sources */,
+				63942BDA1E286AC4000E7649 /* HasBuffer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		63E0D9851DFF092600C3F650 /* PBXTargetDependency */ = {
+		639FF7351E2D5D6D005EDACF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 63E0D97E1DFF092600C3F650 /* WhiteNoiseCore */;
-			targetProxy = 63E0D9841DFF092600C3F650 /* PBXContainerItemProxy */;
+			targetProxy = 639FF7341E2D5D6D005EDACF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -373,7 +528,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -418,7 +573,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -465,7 +620,7 @@
 				CODE_SIGN_IDENTITY = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = N8F6RS8578;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -491,7 +646,7 @@
 				CODE_SIGN_IDENTITY = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = N8F6RS8578;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";

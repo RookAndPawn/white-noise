@@ -7,41 +7,124 @@
 //
 
 import UIKit
-import WhiteNoiseCore
 import MediaPlayer
 import AVKit
+import Guava
+import WhiteNoiseCore
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, RPUIView, RPUIHasText {
 
-	var whiteNoise : WhiteNoise!
+	var javaPlayButtonRef : RPUIHasClickHandlers!
+	var javaPauseButtonRef : RPUIHasClickHandlers!
+	var javaPlayPauseButtonRef : RPUIHasClickHandlers!
+
+
+	var audioPresenter : RPAVAudioPresenter!
+	var audioView : IosAudioView!
+	var presenter : RPUIPresenter!
+	var eventBus : ComGoogleCommonEventbusAsyncEventBus!
+	var playerInfo : MPNowPlayingInfoCenter!
+	var playerControls : MPRemoteCommandCenter!
 
 	// MARK
 
 	@IBOutlet weak var btnPlayPause: UIButton!
 
-
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		// Do any additional setup after loading the view, typically from a nib.
 
-		whiteNoise = WhiteNoise.instance
+		let executor : JavaUtilConcurrentExecutor =
+				JavaUtilConcurrentExecutors.newSingleThreadExecutor()
 
-		whiteNoise.playStateChangeCallback = {(isPlaying : Bool) in
-			self.btnPlayPause.setTitle(isPlaying ? "Pause" : "Play"
-					, for: UIControlState())
-		}
+		playerInfo = MPNowPlayingInfoCenter.default()
+		playerControls = MPRemoteCommandCenter.shared()
+
+		eventBus = ComGoogleCommonEventbusAsyncEventBus(
+			    javaUtilConcurrentExecutor: executor)
+		
+		audioView = IosAudioView()
+		audioPresenter = RPAVAudioPresenter(rpavAudioView: audioView)
+
+		audioPresenter.bind()
+
+		javaPlayButtonRef = RPUIHasClickHandlers()
+		javaPauseButtonRef = RPUIHasClickHandlers()
+		javaPlayPauseButtonRef = RPUIHasClickHandlers()
+		
+		presenter = RPUIPresenter(rpuiView: self
+				, with: audioPresenter
+				, with: eventBus)
+
+		presenter.bind()
+
+		// Add callbacks to the remote control event for play/pause
+
+		playerControls.togglePlayPauseCommand.addTarget(handler: {
+			(e:MPRemoteCommandEvent) ->  MPRemoteCommandHandlerStatus in
+			self.javaPlayPauseButtonRef.click()
+			return MPRemoteCommandHandlerStatus.success
+
+		})
+
+		playerControls.playCommand.addTarget(handler: {
+			(e:MPRemoteCommandEvent) ->  MPRemoteCommandHandlerStatus in
+			self.javaPlayButtonRef.click()
+			return MPRemoteCommandHandlerStatus.success
+
+		})
+
+		playerControls.pauseCommand.addTarget(handler: {
+			(e:MPRemoteCommandEvent) ->  MPRemoteCommandHandlerStatus in
+			self.javaPauseButtonRef.click()
+			return MPRemoteCommandHandlerStatus.success
+
+		})
+
 	}
+
 	override func didReceiveMemoryWarning() {
 		super.didReceiveMemoryWarning()
 		// Dispose of any resources that can be recreated.
 	}
 
-	@IBAction func togglePlayPause(_ sender: UIButton) {
-		if whiteNoise.isPlaying {
-			whiteNoise.pause()
-		} else {
-			whiteNoise.play()
+	func getText() -> String! {
+		return btnPlayPause.currentTitle
+	}
+
+	func setTextWith(_ text: String!) {
+		DispatchQueue.main.async {
+			self.btnPlayPause.setTitle(text, for: .normal)
 		}
+	}
+
+	func getPlayPauseButtonText() -> RPUIHasText! {
+		return self
+	}
+
+	func getPlayPauseButton() -> RPUIHasClickHandlers! {
+		return javaPlayPauseButtonRef
+	}
+
+
+	func getPlayButton() -> RPUIHasClickHandlers! {
+		return javaPlayButtonRef
+	}
+
+	func getPauseButton() -> RPUIHasClickHandlers! {
+		return javaPauseButtonRef
+	}
+
+
+	func setNowPlayingTextWith(_ mainText: String!, with subText: String!) {
+		playerInfo.nowPlayingInfo = [
+			MPMediaItemPropertyTitle:mainText,
+			MPMediaItemPropertyArtist:subText
+		]
+	}
+
+	@IBAction func togglePlayPause(_ sender: UIButton) {
+		javaPlayPauseButtonRef.click()
 	}
 }
 

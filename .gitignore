@@ -52,3 +52,14 @@ white-noise-ios/WhiteNoiseCore/Presenter.h
 white-noise-ios/WhiteNoiseCore/Presenter.m
 white-noise-ios/WhiteNoiseCore/View.h
 white-noise-ios/WhiteNoiseCore/View.m
+
+white-noise-android/*.iml
+white-noise-android/.gradle
+white-noise-android/local.properties
+white-noise-android/.idea/workspace.xml
+white-noise-android/.idea/libraries
+white-noise-android/.DS_Store
+white-noise-android/build
+white-noise-android/captures
+white-noise-android/.externalNativeBuild
+
